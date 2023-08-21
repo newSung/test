@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
 
-const url = 'https://port-0-servertest-619z9h2lllkaic66.sel3.cloudtype.app/api/test'
+const url = 'https://port-0-servertest2-619z9h2lllkpq5cz.sel3.cloudtype.app/api/test'
 
 const onSubmitHandler = (event) => {
   console.log('this is test')
