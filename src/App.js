@@ -6,7 +6,7 @@ const url = 'https://port-0-servertest-619z9h2lllkaic66.sel3.cloudtype.app/api/t
 
 const onSubmitHandler = (event) => {
   console.log('this is test')
-  axios.get(url).then(response => {
+  axios.get('/api/test').then(response => {
     console.log(response.data.text)
   })
 }
