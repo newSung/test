@@ -16,6 +16,12 @@ const onSubmitHandler2 = (event) => {
     console.log(response.data.text)
   })
 }
+const onSubmitHandler3 = (event) => {
+  console.log('this is test')
+  axios.get('api/test').then(response => {
+    console.log(response.data.text)
+  })
+}
 
 function App() {
   return (
@@ -23,6 +29,7 @@ function App() {
       <h1>hello</h1>
       <button type="" onClick={onSubmitHandler}>click</button>
       <button type="" onClick={onSubmitHandler2}>click2</button>
+      <button type="" onClick={onSubmitHandler3}>click3</button>
     </div>
   );
 }
