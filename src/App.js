@@ -18,7 +18,7 @@ const onSubmitHandler2 = (event) => {
 }
 const onSubmitHandler3 = (event) => {
   console.log('this is test')
-  axios.get('api/test').then(response => {
+  axios.get('../api/test').then(response => {
     console.log(response.data.text)
   })
 }
