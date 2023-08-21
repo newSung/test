@@ -10,12 +10,19 @@ const onSubmitHandler = (event) => {
     console.log(response.data.text)
   })
 }
+const onSubmitHandler2 = (event) => {
+  console.log('this is test')
+  axios.get(url).then(response => {
+    console.log(response.data.text)
+  })
+}
 
 function App() {
   return (
     <div className="App">
       <h1>hello</h1>
       <button type="" onClick={onSubmitHandler}>click</button>
+      <button type="" onClick={onSubmitHandler2}>click2</button>
     </div>
   );
 }
